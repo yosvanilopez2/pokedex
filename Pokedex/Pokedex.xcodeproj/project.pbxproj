@@ -19,6 +19,7 @@
 		284F9EFA1D5A2EBE001D84C2 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F9EF91D5A2EBE001D84C2 /* Pokemon.swift */; settings = {ASSET_TAGS = (); }; };
 		284F9EFC1D5A6133001D84C2 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F9EFB1D5A6133001D84C2 /* PokeCell.swift */; settings = {ASSET_TAGS = (); }; };
 		284F9F031D5A6F42001D84C2 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284F9F021D5A6F42001D84C2 /* csv.swift */; settings = {ASSET_TAGS = (); }; };
+		284F9F051D5A7E20001D84C2 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 284F9F041D5A7E20001D84C2 /* Pokemon.ttf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		284F9EF91D5A2EBE001D84C2 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pokemon.swift; path = ../Pokemon.swift; sourceTree = "<group>"; };
 		284F9EFB1D5A6133001D84C2 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		284F9F021D5A6F42001D84C2 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = "../../../../Downloads/csvswift-master/csv.swift"; sourceTree = "<group>"; };
+		284F9F041D5A7E20001D84C2 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pokemon.ttf; path = ../../../../Downloads/Pokemon.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		284F9EFF1D5A6E5F001D84C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				284F9F041D5A7E20001D84C2 /* Pokemon.ttf */,
 				284F9EF51D5A2CBE001D84C2 /* pokemon.csv */,
 			);
 			name = Resources;
@@ -286,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284F9F051D5A7E20001D84C2 /* Pokemon.ttf in Resources */,
 				284F9ED21D5A2060001D84C2 /* LaunchScreen.storyboard in Resources */,
 				284F9ECF1D5A2060001D84C2 /* Assets.xcassets in Resources */,
 				284F9EF61D5A2CBE001D84C2 /* pokemon.csv in Resources */,
