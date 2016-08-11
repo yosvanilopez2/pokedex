@@ -14,7 +14,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // use instant initialization in order since we are creating empty object regardless
     var pokemon = [Pokemon]()
     var filteredPokemon = [Pokemon]()
-    var inSearchMode = false
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -45,13 +44,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         filteredPokemon = pokemon
     }
     //runs everytime the input in the search bar is changed
+    //if there is no input show all pokemon else only show matching pokemon 
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == nil || searchBar.text == "" {
-            inSearchMode = false
             view.endEditing(true)
             filteredPokemon = pokemon
         } else {
-            inSearchMode = true
             let lower = searchBar.text!.lowercaseString
             filteredPokemon = pokemon.filter({$0.name.rangeOfString(lower) != nil})
         }
@@ -79,10 +77,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
+        let poke = filteredPokemon[indexPath.row]
+        performSegueWithIdentifier("goToDetails", sender: poke)
     }
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
+    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "goToDetails" {
+            if let detailVC = segue.destinationViewController as? PokeInfoVC {
+                if let poke = sender as? Pokemon {
+                    detailVC.pokemon = poke
+                }
+            }
+        }
     }
 }
 
