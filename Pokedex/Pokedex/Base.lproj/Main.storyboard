@@ -333,14 +333,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="270" height="18"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFu-eo-AwM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="18"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                         <color key="textColor" red="0.86274509799999999" green="0.039215686270000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcL-he-dps">
-                                                        <rect key="frame" x="236" y="0.0" width="35" height="18"/>
+                                                        <rect key="frame" x="57" y="0.0" width="214" height="18"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" white="0.40999999999999998" alpha="1" colorSpace="calibratedWhite"/>
@@ -421,12 +421,13 @@
                     </view>
                     <connections>
                         <outlet property="Weight" destination="TdA-dq-EAE" id="nB4-9I-5r8"/>
-                        <outlet property="description" destination="TdA-dq-EAE" id="4GO-Z0-t8w"/>
                         <outlet property="height" destination="VcL-he-dps" id="BHU-Uo-hka"/>
                         <outlet property="name" destination="0JS-9V-dgk" id="iNp-cA-Uay"/>
                         <outlet property="pokeDescription" destination="kRK-wN-0GM" id="AoN-mO-baa"/>
-                        <outlet property="pokeDscription" destination="0JS-9V-dgk" id="AbJ-lH-zE2"/>
                         <outlet property="pokeId" destination="aax-q3-rQO" id="UDG-MR-hje"/>
+                        <outlet property="pokeImg1" destination="86F-Px-cNn" id="9IM-5x-g7R"/>
+                        <outlet property="pokeImg2" destination="faa-Vp-caP" id="8qc-Er-1jc"/>
+                        <outlet property="pokeImg3" destination="SDb-UJ-6LT" id="Fvz-Q5-o1R"/>
                         <outlet property="type" destination="A5G-AQ-WFe" id="pue-sS-mwZ"/>
                     </connections>
                 </viewController>
